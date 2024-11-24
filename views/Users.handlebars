@@ -1,0 +1,51 @@
+<h1>Users Page</h1>
+
+  <p>
+    This will allow the admins to help test the new features. It will allow users to edit information, make and change
+    user bio, and view user friends.
+  </p>
+
+  <ul>
+    <li><button id="UAddButton" class="button button1">Add user:</button></li>
+	<label id="labelAdd" for="UAddText" class="hidden">User:</label>
+    <input id="UAddText" class="hidden" type="text">
+	<label id="labelAdd2" for="UAddText2" class="hidden">Email:</label>
+    <input id="UAddText2" class="hidden" type="text">
+	<label id="labelAdd3" for="UAddText3" class="hidden">About:</label>
+    <input id="UAddText3" class="hidden" type="text">
+
+    <li><button id="UEditButton" class="button button1">Edit user:</button></li>
+	<label id="labelEdit" for="UEditText" class="hidden">User:</label>
+    <input id="UEditText" class="hidden" type="text"> 
+	<label id="labelEdit2" for="UEditText2" class="hidden">Email:</label>
+    <input id="UEditText2" class="hidden" type="text"> 
+	<label id="labelEdit3" for="UEditText3" class="hidden">About:</label>
+    <input id="UEditText3" class="hidden" type="text"> 
+
+    <li><button id="UviewButton" class="button button1">View all public user data:</button></li>
+	<label id="labelView" for="UAddText" class="hidden">User:</label>
+    <input id="UviewText" class="hidden" type="text"> 
+
+	<li><button id="UDeleteButton" class="button button1">Delete user:</button></li>
+	<label id="labelDelete" for="UAddText" class="hidden">User:</label>
+    <input id="UDeleteText" class="hidden" type="text"> 
+  </ul>
+
+	<table>
+		<tr>
+			<th>UserID</th>
+			<th>Email</th>
+			<th>About</th>
+		</tr>
+	    <tbody id = "output-users">
+	        {{#each Users}}
+	            <tr>
+	                <td>{{this.UserID}}</td>
+	                <td>{{this.Email}}</td>
+					<td>{{this.AboutUser}}</td>
+	            </tr>
+	        {{/each}}
+	    </tbody>
+	</table>
+
+  <span><a href="index">Home Page</a></span>

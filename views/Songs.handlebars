@@ -1,0 +1,62 @@
+<h1>Songs Page</h1>
+
+  <p>
+    This will allow the admins to help test the new features. It will allow users to search for songs and show the top
+    songs.
+  </p>
+
+  <ul>
+    <li><button class="button button1" id="SsongsButton">Search Songs:</button></li>
+	<label id="labelSong" for="SsongsText" class="hidden">Song:</label>
+    <input id="SsongsText" class="hidden" type="text"> 
+	<table id="output-songs" >
+			<tbody>
+				<tr>
+					<th>Song</th>
+					<th>Artist</th>
+					<th>Length in seconds</th>
+				</tr>
+			</tbody>
+		</table>
+		
+	<li><button id="SAddButton" class="button button1">Add songs:</button></li>
+	<label id="labelAdd" for="SAddText" class="hidden">Song:</label>
+	<input id="SAddText" class="hidden" type="text">
+	<label id="labelAdd2" for="SAddText" class="hidden">Artist name:</label>
+	<input id="SAddText2" class="hidden" type="text"> 
+	<label id="labelAdd3" for="SAddText" class="hidden">Time:</label>
+	<input id="SAddText3" class="hidden" type="text"> 
+
+	<li><button id="SUpdateButton" class="button button1">Update songs:</button></li>
+	<label id="labelPrev" for="PrevName" class="hidden">Original Song name:</label>
+	<input id="PrevName" class="hidden" type="text">
+	<label id="labelUpdate" for="SUpdateText" class="hidden">Song:</label>
+	<input id="SUpdateText" class="hidden" type="text">
+	<label id="labelUpdate2" for="SUpdateText2" class="hidden">Artist name:</label>
+	<input id="SUpdateText2" class="hidden" type="text"> 
+	<label id="labelUpdate3" for="SUpdateText3" class="hidden">Time:</label>
+	<input id="SUpdateText3" class="hidden" type="text"> 
+
+	<li><button id="SDeleteButton" class="button button1">Delete songs:</button></li>
+	<label id="labelDelete" for="SDeleteText" class="hidden">Song:</label>
+	<input id="SDeleteText" class="hidden" type="text"> 
+  </ul>
+
+	<table>
+		<tr>
+			<th>Song</th>
+			<th>Artist</th>
+			<th>Length in seconds</th>
+		</tr>
+	    <tbody>
+	        {{#each Songs}}
+	            <tr>
+	                <td>{{this.SongID}}</td>
+	                <td>{{this.CreatorID}}</td>
+					<td>{{this.Time}}</td>
+	            </tr>
+	        {{/each}}
+	    </tbody>
+	</table>
+
+  <span><a href="index">Home Page</a></span>

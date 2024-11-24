@@ -1,0 +1,56 @@
+<h1>Artist Page</h1>
+
+	<p>
+		This will allow the admins to help test the new features. It will allow users to search for artist and show the
+		different songs that are produced by the artist
+	</p>
+
+
+	<ul>
+		<li> <button id="ASearchButton" class="button button1">Search for a Artist</button></li>
+		<label id="labelArtist" for="ASearchSongstext" class="hidden">Artist name:</label>
+		<input id="ASearchText" class="hidden" type="text">
+		<table id="SearchA" >
+		<tbody>
+			<tr>
+				<th>Artist</th>
+				<th>About</th>
+			</tr>
+		</tbody>
+	</table>
+
+		<li> <button id="AAddButton" class="button button1">Add a Artist</button></li>
+		<label id="labelAdd1" for="AAddText" class="hidden">Artist name:</label>
+		<input id="AAddText" class="hidden" type="text" name = "AddArtist">
+		<label id="labelAdd2" for="AAddText2" class="hidden">About artist:</label>
+		<input id="AAddText2" class="hidden" type="text" name = "AddAbout">
+		
+		<li> <button id="AUpdateButton" class="button button1">Update a Artist</button></li>
+		<label id="labelPrev" for="PrevName" class="hidden">Original artist name:</label>
+		<input id="PrevName" class="hidden" type="text">
+		<label id="labelupdate1" for="AUpdateText" class="hidden">ArtistName:</label>
+		<input id="AUpdateText" class="hidden" type="text">
+		<label id="labelupdate2" for="AUpdateText2" class="hidden">About artist:</label>
+		<input id="AUpdateText2" class="hidden" type="text">
+		
+		<li> <button id="ADeleteButton" class="button button1">Delete a Artist</button></li>
+		<label id="labelDelete" for="ADeleteText" class="hidden">Artist name:</label>
+		<input id="ADeleteText" class="hidden" type="text">
+	</ul>
+	<table>
+		<tr>
+			<th>Artist</th>
+			<th>About</th>
+		</tr>
+	    <tbody>
+	        {{#each result}}
+	            <tr>
+	                <td>{{this.ArtistID}}</td>
+	                <td>{{this.About}}</td>
+	            </tr>
+	        {{/each}}
+	    </tbody>
+	</table>
+	
+	<br><br>
+	<span><a href="index">Home Page</a></span>

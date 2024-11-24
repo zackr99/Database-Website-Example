@@ -1,0 +1,106 @@
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html
+{	
+	position: fixed;
+	top:0; 
+	bottom:0; 
+	left:0; 
+	right:0; 
+   	background-image: url('CS340.jpg');
+   	background-repeat: no-repeat;
+   	background-size: cover;
+   	background-position: center;
+}
+
+.header
+{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .5);
+}
+h1
+{
+	align-self: center;
+	text-align: center;
+	font-family: sans-serif;
+	text-decoration-line: underline;
+	text-decoration-color: black;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+}
+
+.hidden
+{
+	display: none;
+}
+
+table
+{
+	border: 2px solid white;
+	margin: auto;
+	width: 80%;
+	background-color: black;
+}
+
+th
+{
+	background-color: black;
+	padding: 1px;
+	margin: 0px;
+	color: white;
+	text-align: center;
+}
+
+tbody
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+td{
+  background-color: black;
+  border: 2px solid white;
+  padding: 1px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+<h1>Playlist page</h1>
+
+	<p>
+		This will allow the admins to help test the new features for users to have playlists. It will allow the admins
+		to
+		search playlist, add a new playlist or delete one.
+	</p>
+
+	<ul>
+		<li><button class="button button1" id="PplaylistButton">Search playlist</button></li>
+		<label id="labelSearch" for="PplaylistText" class="hidden">Playlist:</label>
+		<input id="PplaylistText" class="hidden" type="text">
+		
+		<li><button class="button button1" id="PnewplaylistButton">Add a new playlist</button></li>
+		<label id="labelAdd" for="PnewplaylistText" class="hidden">Playlist:</label>
+		<input id="PnewplaylistText" class="hidden" type="text">
+		<label id="labelAdd2" for="PnewplaylistText2" class="hidden">Owner:</label>
+		<input id="PnewplaylistText2" class="hidden" type="text">
+		<label id="labelAdd3" for="PnewplaylistText3" class="hidden">Genre:</label>
+		<input id="PnewplaylistText3" class="hidden" type="text">
+
+		<li><button class="button button1" id="PUpdateplaylistButton">Update a new playlist</button></li>
+		<label id="labelUpdate" for="PUpdateplaylistText" class="hidden">Playlist:</label>
+		<input id="PUpdateplaylistText" class="hidden" type="text">
+		<label id="labelUpdate2" for="PUpdateplaylistText2" class="hidden">Owner:</label>
+		<input id="PUpdateplaylistText2" class="hidden" type="text">
+		<label id="labelUpdate3" for="PUpdateplaylistText3" class="hidden">Genre:</label>
+		<input id="PUpdateplaylistText3" class="hidden" type="text">
+
+		<li><button class="button button1" id="PdelplaylistButton">Delete playlist</button></li>
+		<label id="labelDelete" for="PdelplaylistText" class="hidden">Playlist:</label>
+		<input id="PdelplaylistText" class="hidden" type="text">
+	</ul>
+	<table>
+		<tr>
+			<th>Playlist</th>
+			<th>Owner</th>
+			<th>Genre</th>
+		</tr>
+			<tbody id = "output-play">
+					{{#each playlist}}
+							<tr>
+									<td>{{this.PlaylistName}}</td>
+									<td>{{this.OwnerID}}</td>
+									<td>{{this.PlaylistGenre}}</td>
+							</tr>
+					{{/each}}
+			</tbody>
+	</table>
+
+	<br><br>
+	<span><a href="index">Home Page</a></span>

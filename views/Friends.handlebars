@@ -1,0 +1,48 @@
+<h1>Friends page</h1>
+	<p>
+		This will allow the admins to help test the new features for users to have friends. It will allow the admins to
+		show
+		friend connections for a user and add or remove them.
+	</p>
+	
+	<ul>
+		<li><button id="FSearchUserButton" class="button button1">Search User Function:</button></li>
+		<label id="labelSearch" for="FSearchText" class="hidden">User:</label>
+		<input id="FSearchText" class="hidden" type="text">
+		<table id="SearchF" >
+			<tbody>
+				<tr>
+					<th>Artist</th>
+					<th>About</th>
+				</tr>
+			</tbody>
+		</table>
+		
+		<li><button id="FAddfriendButton" class="button button1">Add Friend Function:</button> </li>
+		<label id="labelAdd1" for="FAddfriendText" class="hidden">User:</label>
+		<input id="FAddfriendText" class="hidden" type="text">
+		<label id="labelAdd2" for="FAddfriendText" class="hidden">Friend:</label>
+		<input id="FAddfriendText2" class="hidden" type="text">
+		
+		<li><button id="FDeleteFriendButton" class="button button1">Delete Friend Function:</button></li>
+		<label id="labelDelete" for="FFriendDeleteText" class="hidden">User:</label>
+		<input id="FFriendDeleteText" class="hidden" type="text">
+	</ul>
+
+	<table>
+		<tr>
+			<th>User</th>
+			<th>Friend</th>
+		</tr>
+	    <tbody>
+	        {{#each Friends}}
+	            <tr>
+	                <td>{{this.UserID}}</td>
+	                <td>{{this.FriendID}}</td>
+	            </tr>
+	        {{/each}}
+	    </tbody>
+	</table>
+
+	<br><br>
+	<span><a href="index">Home Page</a></span>
